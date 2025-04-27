@@ -1,0 +1,404 @@
+@font-face {
+  font-family: Iansui;
+  src: url(/Assets/Fonts/Iansui/Iansui-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  background-image: url(/Assets/Images/Off-White-BG.jpg);
+  background-size: cover;
+  font-family: Iansui;
+  font-size: 18px;
+  font-weight: 600;
+  
+}
+main {
+  position: relative;
+  margin: 0 20px;
+}
+#intro-title {
+  text-align: center;
+  font-size: 55px;
+  font-weight: 900;
+  margin: 2%;
+}
+#loader-backdrop{
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(54, 54, 54, 0.8);
+  z-index: 100;
+}
+.logo img {
+  
+  height: 50px;
+  position: absolute;
+  right: 2%;
+  top: 14%;
+}
+#loader-backdrop img {
+  width:40vw;
+  border-radius: 50px;
+  position: relative;
+  align-self: center;
+  z-index: 50;
+}
+#loader-backdrop h4 {
+  z-index: 100;
+  font-weight: 600;
+  position: absolute;
+  text-align: center;
+  text-justify: center;
+  width: 200px;
+  height: 50px;
+  bottom: 20vh;
+  border-radius: 50%;
+  background-color: rgb(168, 244, 252);
+  border: 2px solid rgb(192, 0 , 0) ;
+  color: rgb(25, 97, 25);
+}
+header {
+  background-image: linear-gradient(45deg, green, white, white, red);
+  text-align: center;
+  margin: 0px;
+  padding: 20px;
+  border: 0px;
+  border-bottom: 2px solid rgb(25, 97, 25);
+  display: flexbox;
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  
+}
+
+.head-button {
+  background-color: rgb(192, 0, 0);
+  color: white;
+  height: 30px;
+  width: 120px;
+  border-radius: 25px;
+  border: 2px solid rgb(0, 98, 0);
+  text-align: center;
+  margin: 4px;
+  box-shadow: 3px 3px 5px rgb(58, 58, 58);
+}
+
+.head-button:hover {
+  background-color: rgb(1, 186, 1);
+  border-color: rgb(192, 0 , 0);
+  transform: scale(1.1);
+}
+.head-button:active {
+  background-color: white;
+  color: rgb(192, 0 , 0);
+  transform: scale(0.9);
+  border: 2px solid rgb(192, 0 , 0);
+}
+#head-buttons-div {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  gap: 15px;
+
+}
+ul {
+  list-style: none;
+}
+.nav-links {
+  display: none;
+}
+.hamburger {
+  
+  display: none;
+  cursor: pointer;
+  width: 34px;
+  
+}
+.bar {
+  
+  flex-basis: 100%;
+  height: 4px;
+  background-color: black;
+  margin: 3px;
+  border-radius: 2px;
+}
+#header-headline {
+  font-size: 48px;
+  position: relative;
+  justify-self: center;
+  font-weight: 800;
+  text-shadow: 3px 3px 5px;
+}
+#prenota, #galleria-div, #libro-div, #recensioni, #contatti:target {
+  scroll-margin-top: 4em;
+}
+
+iframe {
+  display: block;
+  position: relative;
+  top: 2vh;
+  justify-self: center;
+  border-radius: 20px;
+  box-shadow: 4px 4px 10px;
+  height: 50vh;
+  width: 50vw;
+}
+.picture-std {
+  width: 400px;
+  margin: 10px 20px 0px 20px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 7px rgb(58, 58, 58);
+  margin: 4%;
+   
+}
+#colloseo {
+  float: right;
+  border: 1px solid green;
+  
+}
+#val-photo {
+  float: left;
+  border: 1px solid red;
+}
+.carousel-inner {
+  border-radius: 20px;
+}
+.carousel-item {
+  background-color: rgba(0, 0, 0, 1);
+  justify-items: center;
+  text-shadow: 3px 3px 4px rgba(255, 255, 255, 0.8);
+  transform: scale(1.1);
+}
+.carousel-item:hover {
+  transform: scale(1) ;
+  transition-duration: 2s;
+  
+}
+.carousel-item img {
+  opacity: 0.3;
+  
+}
+#prenota .prenota-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  gap: 10px;
+  
+  
+}
+.prenota-grid div {
+  
+  flex: 30%;
+  border: 2px solid black;
+}
+
+#libro {
+  float: left;
+  border: 1px solid green;
+}
+.picture-std:hover {
+  transform: scale(120%);
+  transition: 70ms;
+}
+.placeholder-pic {
+  width: 55vw;
+}
+
+footer {
+  text-align: center;
+  justify-content: center;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/Assets/Images/Italy-Pictures/SPOLETO-PANORAMICA.jpg);
+  background-color: black;
+  border-top: 1px solid rgb(192, 0 , 0);
+  background-position: 0 33%;
+  background-size: cover;
+  color: white;
+  position: relative;
+  bottom: 0px;
+  font-size: 15px;
+  padding: 5% 0px;
+}
+#libro-div {
+  color: white;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Assets/Images/Italy-Pictures/1PolignanoItalyshutterstock_1356233981.avif);
+  background-size: cover;
+  padding-bottom: 1%;
+  border-radius: 20px;
+}
+#libro-button {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: rgb(192, 0, 0);
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  align-content: center;
+  box-shadow: 5px 5px 7px rgb(58, 58, 58);
+  left: 1vw;
+}
+#libro-button:hover {
+  background-color: rgb(1, 186, 1);
+  transform: scale(1.1);
+}
+.galleria {
+  display: flexbox;
+  max-height: 400px;
+  max-width: 30%;
+  margin: 0.5%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 7px rgb(58, 58, 58);
+  border: 1px solid black;
+  justify-content: center;
+}
+.galleria:hover {
+  position: relative;
+  transform: scale(2);
+  transform-origin: 0% 0%;
+  -moz-transition:all 2s;
+  -webkit-transition:all 2s;
+  -o-transition:all 2s;
+  transition:all 2s;
+  inset: auto 0;
+  z-index: 5;
+}
+
+.galleria:hover:nth-child(3n) {
+  transform-origin: 100% 50%;
+}
+.galleria:hover:nth-child(3n - 1) {
+  transform-origin: 50% 50%;
+}
+.galleria:active {
+  transform: none;
+  -moz-transition:all 0.1s;
+  -webkit-transition:all 0.1s;
+  -o-transition:all 0.1s;
+  transition:all 0.1s;
+  
+}
+.foot-icons {
+  
+  width: 30px;
+  background-color: blue;
+  border-radius: 50%;
+  
+}
+#paypal {
+  background-color: white;
+}
+a {
+  text-decoration: none;
+
+}
+h3, h2 {
+  font-weight: 800;
+  text-shadow: 3px 3px 5px;
+}
+
+fieldset div {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 15px;
+  
+}
+#contatti-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5vw;
+
+}
+.contatti-form {
+  width: 90%;
+
+}
+
+@media (max-width: 750px) {
+  #val-photo, #colloseo, #libro {
+    
+    width: 85vw;
+    float: unset;
+  }
+  #intro-title {
+    font-size: 2em;
+  }
+  .galleria {
+    display: block;
+    max-width: 90vw;
+    margin: 5% 0;
+  }
+  .galleria:hover:nth-child(3n) {
+    transform-origin: 0 0;
+  }
+  .galleria:hover:nth-child(3n - 1) {
+    transform-origin: 0 0;
+  }
+  .galleria:hover {
+    transform: scale(1);
+  }
+  #libro-div {
+    
+    padding: 5%;
+  }
+  #libro-div img {
+    display: flex;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+  #header-headline {
+    display: none;
+  }
+  #head-buttons-div {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+
+  }
+  .logo img {
+    
+    display: block;
+  }
+  h5 {
+    font-size: 1.1em;
+  }
+  #intro-title {
+    font-size: 2.5em;
+  }
+  #contatti-grid {
+    display: block;
+  }
+  .picture-std {
+    width: 300px;
+  }
+  p {
+    font-size: 0.9em;
+  }
+}
+@media (min-width: 901px) {
+  .nav-links {
+    display: none;
+  
+  }
+  .hamburger {
+    display: none;
+
+  }
+}
