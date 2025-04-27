@@ -1,6 +1,6 @@
 @font-face {
   font-family: Iansui;
-  src: url(Assets/Fonts/Iansui/Iansui-Regular.ttf);
+  src: url(/Assets/Fonts/Iansui/Iansui-Regular.ttf);
 }
 * {
   box-sizing: border-box;
@@ -9,7 +9,7 @@ body {
   margin: 0px;
   padding: 0px;
   border: 0px;
-  background-image: url(Assets/Images/Off-White-BG.jpg);
+  background-image: url(/Assets/Images/Off-White-BG.jpg);
   background-size: cover;
   font-family: Iansui;
   font-size: 18px;
@@ -214,7 +214,7 @@ iframe {
 footer {
   text-align: center;
   justify-content: center;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(Assets/Images/Italy-Pictures/SPOLETO-PANORAMICA.jpg);
+  background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/Assets/Images/Italy-Pictures/SPOLETO-PANORAMICA.jpg);
   background-color: black;
   border-top: 1px solid rgb(192, 0 , 0);
   background-position: 0 33%;
@@ -225,9 +225,10 @@ footer {
   font-size: 15px;
   padding: 5% 0px;
 }
+
 #libro-div {
   color: white;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(Assets/Images/Italy-Pictures/1PolignanoItalyshutterstock_1356233981.avif);
+  background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Assets/Images/Italy-Pictures/1PolignanoItalyshutterstock_1356233981.avif);
   background-size: cover;
   padding-bottom: 1%;
   border-radius: 20px;
