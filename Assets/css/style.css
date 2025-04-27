@@ -2,6 +2,10 @@
   font-family: Iansui;
   src: url(../Fonts/Iansui/Iansui-Regular.ttf);
 }
+@font-face {
+  font-family: yellowtail;
+  src: url(../Fonts/yellowtail/Yellowtail-Regular.ttf);
+}
 * {
   box-sizing: border-box;
 }
@@ -21,8 +25,12 @@ main {
   margin: 0 20px;
 }
 #intro-title {
+  color: white;
+  text-shadow: 3px 3px 5px rgb(0, 81, 0);
+  -webkit-text-stroke: .1px #ff3131;
+  font-stretch: ultra-expanded;
   text-align: center;
-  font-size: 55px;
+  font-size: 70px;
   font-weight: 900;
   margin: 2%;
 }
@@ -327,6 +335,10 @@ fieldset div {
 }
 
 @media (max-width: 750px) {
+  iframe {
+    height: 40vh;
+    margin-bottom: 5vh;
+  }
   #val-photo, #colloseo, #libro {
     
     width: 85vw;
