@@ -119,9 +119,12 @@ header {
 }
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0%;
 }
 .nav-links {
   display: none;
+
 }
 .hamburger {
   
@@ -323,6 +326,7 @@ fieldset div {
 @media (max-width: 900px) {
   .nav-links {
     display: none;
+    
   }
   #header-headline {
     display: none;
