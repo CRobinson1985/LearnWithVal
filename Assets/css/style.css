@@ -26,7 +26,7 @@ main {
 }
 #intro-title {
   color: white;
-  text-shadow: 3px 3px 5px rgb(0, 81, 0);
+  text-shadow: 3px 3px 5px hsl(152, 69%, 31%);
   -webkit-text-stroke: .1px #ff3131;
   font-stretch: ultra-expanded;
   text-align: center;
@@ -73,7 +73,7 @@ main {
   color: rgb(25, 97, 25);
 }
 header {
-  background-image: linear-gradient(45deg, green, white, white, red);
+  background-image: linear-gradient(45deg, hsl(152, 69%, 31%), white, red);
   text-align: center;
   margin: 0px;
   padding: 20px;
@@ -87,12 +87,12 @@ header {
 }
 
 .head-button {
-  background-color: rgb(192, 0, 0);
+  background-color: hsl(354, 70%, 54%);
   color: white;
   height: 30px;
   width: 130px;
   border-radius: 25px;
-  border: 2px solid rgb(0, 98, 0);
+  border: 2px solid hsl(152, 69%, 31%);
   text-align: center;
   margin: 4px;
   box-shadow: 3px 3px 5px rgb(58, 58, 58);
@@ -100,15 +100,15 @@ header {
 }
 
 .head-button:hover {
-  background-color: rgb(1, 186, 1);
-  border-color: rgb(192, 0 , 0);
+  background-color: hsl(152, 69%, 31%);
+  border-color: red;
   transform: scale(1.1);
 }
 .head-button:active {
   background-color: white;
-  color: rgb(192, 0 , 0);
+  color: red;
   transform: scale(0.9);
-  border: 2px solid rgb(192, 0 , 0);
+  border: 2px solid red;
 }
 #head-buttons-div {
   display: flex;
@@ -228,7 +228,7 @@ footer {
   justify-content: center;
   background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Images/Italy-Pictures/SPOLETO-PANORAMICA.jpg);
   background-color: black;
-  border-top: 1px solid rgb(192, 0 , 0);
+  border-top: 1px solid red;
   background-position: 0 33%;
   background-size: cover;
   color: white;
