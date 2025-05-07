@@ -358,6 +358,9 @@ fieldset div {
     font-size: 0.9em;
   }
 }
+.emoji {
+  width: 35px;
+}
 
 @media (max-width: 750px) {
   iframe {
