@@ -245,14 +245,26 @@ footer {
   padding-bottom: 1%;
   border-radius: 20px;
 }
+#galleria-pics-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+
+
+}
 .galleria {
-  display: flexbox;
-  max-height: 400px;
-  max-width: 30%;
-  margin: 0.5%;
-  border-radius: 20px;
+  
+  
+  
+  width: 30%;
+  margin: 0.5% 0;
+  /* border-radius: 20px; */
   box-shadow: 5px 5px 7px rgb(58, 58, 58);
-  border: 1px solid black;
+  border-top: 4px solid rgb(255, 255, 255);
+  border-left: 4px solid rgb(255, 255, 255);
+  border-right: 4px solid rgb(255, 255, 255);
+  border-bottom: 50px solid rgb(255, 255, 255);
   justify-content: center;
 }
 .galleria:hover {
