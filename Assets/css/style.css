@@ -310,6 +310,8 @@ a {
 h3, h2 {
   font-weight: 800;
   text-shadow: 3px 3px 5px;
+  justify-self: center;
+  margin-bottom: 5vh;
 }
 
 fieldset div {
