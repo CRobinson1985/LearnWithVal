@@ -117,6 +117,7 @@ header {
   gap: 15px;
 
 }
+
 ul {
   list-style: none;
   padding: 0;
@@ -314,6 +315,11 @@ h3, h2 {
   margin-bottom: 5vh;
 }
 
+.emoji {
+  width: 35px;
+}
+
+
 fieldset div {
   width: 100%;
   display: flex;
@@ -337,8 +343,8 @@ fieldset div {
     font-size: 3em;
   }
 }
-@media (max-width: 900px) {
-  .nav-links {
+@media (max-width: 1070px) {
+    .nav-links {
     display: none;
     
   }
@@ -352,6 +358,10 @@ fieldset div {
     display: block;
 
   }
+}
+
+@media (max-width: 900px) {
+
   .logo img {
     
     display: block;
@@ -372,9 +382,7 @@ fieldset div {
     font-size: 0.9em;
   }
 }
-.emoji {
-  width: 35px;
-}
+
 
 @media (max-width: 750px) {
   iframe {
@@ -414,7 +422,7 @@ fieldset div {
 }
 
 
-@media (min-width: 901px) {
+@media (min-width: 1071px) {
   .nav-links {
     display: none;
   
