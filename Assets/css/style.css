@@ -213,7 +213,10 @@ iframe {
   flex: 30%;
   border: 2px solid black;
 }
-
+.prenota-p {
+  justify-self: center;
+  width: 60vw;
+}
 #libro {
   float: left;
   border: 1px solid green;
@@ -346,7 +349,7 @@ fieldset div {
   }
 }
 @media (max-width: 1070px) {
-    .nav-links {
+  .nav-links {
     display: none;
     
   }
@@ -382,6 +385,9 @@ fieldset div {
   }
   p {
     font-size: 0.9em;
+  }
+  .prenota-p{
+    width: 80vw;
   }
 }
 
@@ -420,6 +426,9 @@ fieldset div {
   #libro-div img {
     display: flex;
     justify-self: center;
+  }
+  .prenota-p {
+    width: 95vw;
   }
 }
 
