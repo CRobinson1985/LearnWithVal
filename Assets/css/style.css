@@ -34,6 +34,13 @@ main {
   font-weight: 900;
   margin: 2%;
 }
+.logo img {
+  
+  height: 50px;
+  position: absolute;
+  right: 2%;
+  top: 14%;
+}
 #loader-backdrop{
   width: 100vw;
   height: 100%;
@@ -43,13 +50,6 @@ main {
   align-items: center;
   background-color: rgba(54, 54, 54, 0.8);
   z-index: 100;
-}
-.logo img {
-  
-  height: 50px;
-  position: absolute;
-  right: 2%;
-  top: 14%;
 }
 #loader-backdrop img {
   width:40vw;
@@ -238,8 +238,6 @@ footer {
   background-position: 0 33%;
   background-size: cover;
   color: white;
-  position: relative;
-  bottom: 0px;
   font-size: 15px;
   padding: 5% 0px;
 }
