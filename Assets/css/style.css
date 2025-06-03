@@ -225,6 +225,10 @@ iframe {
 .placeholder-pic {
   width: 55vw;
 }
+.center-me {
+  justify-self: center;
+  
+}
 
 footer {
   text-align: center;
