@@ -203,26 +203,13 @@ iframe {
 }
 .carousel-item:hover {
   transform: scale(1) ;
-  transition-duration: 2s;
+  transition-duration: 1.5s;
   
 }
 .carousel-item img {
-  opacity: 0.3;
-  
+  opacity: 0.5;
 }
-#prenota .prenota-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: space-around;
-  gap: 10px;
-  
-  
-}
-.prenota-grid div {
-  
-  flex: 30%;
-  border: 2px solid black;
-}
+
 .prenota-p {
   justify-self: center;
   width: 60vw;
@@ -232,7 +219,7 @@ iframe {
   border: 1px solid green;
 }
 .picture-std:hover {
-  transform: scale(120%);
+  transform: scale(110%);
   transition: 70ms;
 }
 .placeholder-pic {
@@ -242,7 +229,7 @@ iframe {
 footer {
   text-align: center;
   justify-content: center;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Images/Italy-Pictures/SPOLETO-PANORAMICA.jpg);
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Images/Italy-Pictures/SPOLETO-PANORAMICA.jpg);
   background-color: black;
   border-top: 1px solid red;
   background-position: 0 33%;
@@ -254,7 +241,7 @@ footer {
 
 #libro-div {
   color: white;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/Italy-Pictures/1PolignanoItalyshutterstock_1356233981.avif);
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Images/Italy-Pictures/1PolignanoItalyshutterstock_1356233981.avif);
   background-size: cover;
   padding-bottom: 1%;
   border-radius: 20px;
