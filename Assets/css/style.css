@@ -460,6 +460,8 @@ fieldset div {
 @media (max-width: 758px) {
   #intro-title {
     font-size: 1.5em;
+     -webkit-text-stroke: 1.5px #ff3131;
+    text-shadow: 2px 2px 3px hsl(152, 69%, 31%);
   }
 }
 @media (max-width: 620px) {
@@ -467,7 +469,8 @@ fieldset div {
     font-size: 0.9em;
   }
   #intro-title {
-    font-size: 1em;
+    font-size: 1em; -webkit-text-stroke: 1px #ff3131;
+    text-shadow: 1px 1px 3px hsl(152, 69%, 31%);
   }
   h2, h3, h4, h5, h6 {
     font-size: 1em;
