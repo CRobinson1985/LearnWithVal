@@ -3,8 +3,8 @@
   src: url(../Fonts/Iansui/Iansui-Regular.ttf);
 }
 @font-face {
-  font-family: yellowtail;
-  src: url(../Fonts/yellowtail/Yellowtail-Regular.ttf);
+  font-family: "luckiest guy";
+  src: url(../Fonts/luckiest-guy/LuckiestGuy-Regular.ttf);
 }
 * {
   box-sizing: border-box;
@@ -36,12 +36,13 @@ h3 {
 }
 #intro-title {
   color: white;
+  font-family: "luckiest guy";
   text-shadow: 3px 3px 5px hsl(152, 69%, 31%);
-  -webkit-text-stroke: .1px #ff3131;
+  -webkit-text-stroke: 2px #ff3131;
   font-stretch: ultra-expanded;
   text-align: center;
-  font-size: 70px;
-  font-weight: 900;
+  font-size: 6em;
+  
   margin: 3%;
 }
 .logo img {
@@ -337,9 +338,82 @@ fieldset div {
   width: 90%;
 
 }
+@media (min-width: 1071px) {
+  .nav-links {
+    display: none;
+  
+  }
+  .hamburger {
+    display: none;
 
+  }
+  
+}
 
-@media (max-width: 750px) {
+@media (max-width: 1850px) {
+  #intro-title {
+    font-size: 5em;
+  }
+}
+@media (max-width: 1525px) {
+  #intro-title {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 1230px) {
+  #intro-title {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 1070px) {
+  .nav-links {
+    display: none;
+    
+  }
+  #header-headline {
+    display: none;
+  }
+  #head-buttons-div {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+
+  }
+  #intro-title {
+    font-size: 2.7em;
+  }
+}
+
+@media (max-width: 900px) {
+ 
+  .logo img {
+    
+    display: block;
+  }
+  h5 {
+    font-size: 1.1em;
+  }
+  #intro-title {
+    font-size: 2.5em;
+  }
+  #contatti-grid {
+    display: block;
+  }
+  .picture-std {
+    width: 300px;
+  }
+  p {
+    font-size: 0.9em;
+  }
+  .prenota-p{
+    width: 80vw;
+  }
+}
+
+@media (max-width: 800px) {
   iframe {
     height: 40vh;
     margin-bottom: 5vh;
@@ -383,65 +457,4 @@ fieldset div {
   }
 }
 
-@media (max-width: 900px) {
- 
-  .logo img {
-    
-    display: block;
-  }
-  h5 {
-    font-size: 1.1em;
-  }
-  #intro-title {
-    font-size: 2.5em;
-  }
-  #contatti-grid {
-    display: block;
-  }
-  .picture-std {
-    width: 300px;
-  }
-  p {
-    font-size: 0.9em;
-  }
-  .prenota-p{
-    width: 80vw;
-  }
-}
 
-
-
-
-@media (min-width: 1071px) {
-  .nav-links {
-    display: none;
-  
-  }
-  .hamburger {
-    display: none;
-
-  }
-  
-}
-
-@media (max-width: 1070px) {
-  .nav-links {
-    display: none;
-    
-  }
-  #header-headline {
-    display: none;
-  }
-  #head-buttons-div {
-    display: none;
-  }
-  .hamburger {
-    display: block;
-
-  }
-}
-@media (max-width: 1150px) {
-  #intro-title {
-    font-size: 3em;
-  }
-}
