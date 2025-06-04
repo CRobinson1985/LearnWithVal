@@ -406,7 +406,7 @@ fieldset div {
   .picture-std {
     width: 300px;
   }
-  p {
+  body p {
     font-size: 0.9em;
   }
   .prenota-p{
@@ -465,8 +465,8 @@ fieldset div {
   }
 }
 @media (max-width: 620px) {
-  body {
-    font-size: 0.9em;
+  body p {
+    font-size: 0.8em;
   }
   #intro-title {
     font-size: 1em; 
