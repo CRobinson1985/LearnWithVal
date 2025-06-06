@@ -260,6 +260,19 @@ footer {
 
 
 }
+
+.hidden {
+  opacity: 0;
+  filter: blur(1000px);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  
+}
+
 .galleria {
   
   
@@ -338,6 +351,11 @@ fieldset div {
 .contatti-form {
   width: 90%;
 
+}
+@media (prefers-reduced-motion) {
+  .hidden{
+    transition: none;
+  }
 }
 @media (min-width: 1071px) {
   .nav-links {

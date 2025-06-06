@@ -13,6 +13,20 @@ const logoImg = document.getElementById('logo');
 const headBtns = document.querySelectorAll('.head-button.li');
 let menuOpen = false;
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+      
+    }
+  });
+});
+
+const hiddenImgs = document.querySelectorAll('.hidden');
+hiddenImgs.forEach((el) => observer.observe(el));
+
 window.addEventListener('resize', () => {
   navLinks.style.display = "none";
   logoImg.style.height = '50px';
