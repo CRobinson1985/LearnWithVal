@@ -228,7 +228,6 @@ iframe {
   justify-items: center;
   text-shadow: 3px 3px 4px rgba(255, 255, 255, 0.8);
   transform: scale(1.1);
-
 }
 
 .carousel-item:hover {
@@ -243,7 +242,6 @@ iframe {
 .carousel-item img {
   transform: scale(1.2);
   opacity: 0.5;
-
 }
 
 .prenota-p {
@@ -258,6 +256,25 @@ iframe {
 
 .center-me {
   justify-self: center;
+}
+
+.col {
+  transition: all 200ms;
+}
+
+.col:hover {
+  transform: scale(1.1);
+  z-index: 100;
+}
+
+.col:hover:nth-of-type(3n) {
+  transform: translateX(-5%) scale(1.1);
+  z-index: 100;
+}
+
+.col:hover:nth-of-type(3n - 2) {
+  transform: translateX(5%) scale(1.1);
+  z-index: 100;
 }
 
 footer {
@@ -293,7 +310,7 @@ footer {
 .hidden {
   opacity: 0;
   filter: blur(1000px);
-  transition: 600ms ;
+  transition: 600ms;
 }
 
 .show {
