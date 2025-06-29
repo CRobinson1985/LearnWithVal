@@ -8,6 +8,11 @@
   src: url(../Fonts/luckiest-guy/LuckiestGuy-Regular.ttf);
 }
 
+@font-face {
+  font-family: rock-salt;
+  src: url("../Fonts/rock-salt/RockSalt-Regular.ttf");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -326,11 +331,18 @@ footer {
   width: 30%;
   margin: 0.5% 0;
   background-color: white;
-  padding: 0.5em 0.5em 4em 0.5em ;
+  padding: 0.5em 0.5em 0 0.5em ;
   box-shadow: 5px 5px 7px rgb(58, 58, 58);
   border-radius: 5px;
   justify-content: center;
   transition: all 0.5s;
+  
+}
+.galleria > p {
+  padding: 0.5em;
+  transform: rotate(-4deg);
+  font-family: rock-salt;
+  font-size: 1.8em;
 }
 
 .galleria > img {
