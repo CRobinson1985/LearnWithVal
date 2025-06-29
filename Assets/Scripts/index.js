@@ -1,11 +1,3 @@
-// const blogBtn = document.getElementById('blog-btn');
-// const contattiBtn = document.getElementById('contatti-btn');
-// const galleriaBtn = document.getElementById('galleria-btn');
-// const prenotaBtn = document.getElementById('prenota-btn');
-// const recensioniBtn = document.getElementById('recensioni-btn');
-// const libroBtn = document.getElementById('libro-btn');
-// const headerBtns = document.querySelector('.head-buttons-div');
-// const form = document.getElementById('contatti-form');
 const loadingBackdrop = document.getElementById('loader-backdrop');
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
@@ -18,7 +10,7 @@ const observer = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('show');
     } else {
-      entry.target.classList.remove('show');
+      // entry.target.classList.remove('show');
       
     }
   });

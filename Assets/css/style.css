@@ -121,16 +121,18 @@ header {
 }
 
 .head-button:hover {
-  background-color: hsl(152, 69%, 31%);
-  border-color: red;
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+  
   transform: scale(1.2);
 }
 
 .head-button:active {
-  background-color: white;
-  color: red;
+  background-color: hsl(152, 69%, 31%);
+  border-color: red;
+  color: white;
   transform: scale(0.9);
-  border: 2px solid red;
 }
 
 #head-buttons-div {
