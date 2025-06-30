@@ -336,11 +336,12 @@ iframe {
   transform: rotate(-4deg);
   font-family: rock-salt;
   font-size: 1.8em;
+  text-align: center;
 }
 
 .galleria > img {
   width: 100%;
-  filter: brightness(0.9) contrast(1.4) saturate(1.3);
+  filter: brightness(0.9) contrast(1.3) saturate(1.1);
 }
 
 .clicked-left {
