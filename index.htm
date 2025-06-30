@@ -22,7 +22,7 @@
       defer
     ></script>
     <link rel="stylesheet" href="Assets/css/style.css" />
-    <script src="Assets/Scripts/index.js" defer></script>
+    <script src="Assets/Scripts/index.js" type="module" defer></script>
     <title>LearnWithVal, Benvenuto!</title>
   </head>
 
@@ -341,6 +341,15 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
+        </div>
+        <h3>Reviews from my Babbel Feedback</h3>
+        <div class="review-container">
+          <div id="reviews-display" class="reviews-display"></div>
+          <div class="controls">
+            <button class="head-button" id="prev">⏮ Previous</button>
+            <button class="head-button" id="toggle">⏸ Pause</button>
+            <button class="head-button" id="next">⏭ Next</button>
+          </div>
         </div>
 
         <div id="prenota">

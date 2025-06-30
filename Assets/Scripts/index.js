@@ -1,9 +1,14 @@
+import { reviews } from './reviews.js';
 const loadingBackdrop = document.getElementById('loader-backdrop');
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const logoImg = document.getElementById('logo');
 const headBtns = document.querySelectorAll('.head-button.li');
 const images = document.querySelectorAll('.galleria');
+const displayEl = document.getElementById('reviews-display');
+const toggleBtn = document.getElementById('toggle');
+const nextBtn = document.getElementById('next');
+const prevBtn = document.getElementById('prev');
 let menuOpen = false;
 
 const observer = new IntersectionObserver((entries) => {
@@ -83,3 +88,72 @@ headBtns.forEach((btn) => {
     }
   });
 });
+
+let history = [];
+let currentIndex = -1;
+let intervalId;
+let isPlaying = true;
+const REVIEW_COUNT = 3;
+const INTERVAL = 5000;
+
+function getRandomReviews(count) {
+  const shuffled = reviews.slice().sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count);
+}
+
+function renderReviews(reviewSet) {
+  displayEl.innerHTML = '';
+  reviewSet.forEach((review) => {
+    const div = document.createElement('div');
+    div.className = 'review-text';
+    div.textContent = review;
+    displayEl.appendChild(div);
+  });
+}
+
+function showNext() {
+  const nextSet = getRandomReviews(REVIEW_COUNT);
+  history.push(nextSet);
+  currentIndex = history.length - 1;
+  renderReviews(nextSet);
+}
+
+function showPrevious() {
+  if (currentIndex > 0) {
+    currentIndex--;
+    renderReviews(history[currentIndex]);
+  }
+}
+
+function startRotation() {
+  intervalId = setInterval(showNext, INTERVAL);
+  isPlaying = true;
+  updateToggleButton();
+}
+
+function stopRotation() {
+  clearInterval(intervalId);
+  isPlaying = false;
+  updateToggleButton();
+}
+
+function toggleRotation() {
+  if (isPlaying) {
+    stopRotation();
+  } else {
+    startRotation();
+  }
+}
+
+function updateToggleButton() {
+  toggleBtn.textContent = isPlaying ? '⏸ Pause' : '▶ Play';
+}
+
+// 🚀 Setup
+toggleBtn.addEventListener('click', toggleRotation);
+prevBtn.addEventListener('click', showPrevious);
+nextBtn.addEventListener('click', showNext);
+
+// Init
+showNext();
+startRotation();

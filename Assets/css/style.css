@@ -256,6 +256,42 @@ iframe {
   opacity: 0.5;
 }
 
+.review-container {
+  max-width: 80%;
+  margin: auto;
+  background: white;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.reviews-display {
+  min-height: 150px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.review-text {
+  background: #eee;
+  width: 30%;
+  padding: 1rem;
+  font-style: italic;
+  transition: opacity 0.3s ease;
+}
+
+.controls {
+
+  margin-top: 1rem;
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  justify-content: center;
+  
+}
+
 .prenota-p {
   justify-self: center;
   width: 60vw;
@@ -488,5 +524,13 @@ a {
   }
   .prenota-p {
     width: 95vw;
+  }
+  .reviews-display {    
+    display: block;
+    
+  }
+  .review-text {
+    width: 100%;
+    margin: 1em 0;
   }
 }
