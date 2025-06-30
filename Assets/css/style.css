@@ -33,6 +33,11 @@ main {
   margin: 0 20px;
 }
 
+.emoji {
+  width: 60px;
+}
+
+
 h3,
 h2 {
   font-weight: 800;
@@ -51,12 +56,12 @@ h3 {
 #intro-title {
   color: white;
   font-family: 'luckiest guy';
-  letter-spacing: 4px;
+  letter-spacing: -1px;
   text-shadow: 3px 3px 5px hsl(152, 69%, 31%);
   -webkit-text-stroke: 2px #ff3131;
   font-stretch: ultra-expanded;
   text-align: center;
-  font-size: clamp(1.6em, 5vw, 6em);
+  font-size: clamp(1.8em, 5vw, 6em);
   margin: 3%;
 }
 
@@ -206,10 +211,9 @@ iframe {
 
 .picture-std {
   width: 400px;
-  margin: 10px 20px 0px 20px;
   border-radius: 50px;
   box-shadow: 5px 5px 7px rgb(58, 58, 58);
-  margin: 4%;
+  margin: 2% 5%;
   transition: all 100ms ease-in-out;
 }
 
@@ -226,6 +230,7 @@ iframe {
 #val-photo {
   float: left;
   border: 1px solid red;
+  filter: brightness(0.75) contrast(1.4) saturate(1.3);
 }
 
 .carousel-inner {
@@ -286,19 +291,6 @@ iframe {
   z-index: 100;
 }
 
-footer {
-  text-align: center;
-  justify-content: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../Images/Italy-Pictures/SPOLETO-PANORAMICA.jpg);
-  background-color: black;
-  border-top: 1px solid red;
-  background-position: 0 33%;
-  background-size: cover;
-  color: white;
-  font-size: 15px;
-  padding: 5% 0px;
-}
 
 #libro-div {
   color: white;
@@ -370,6 +362,38 @@ footer {
   position: relative;
 }
 
+
+fieldset div {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 15px;
+}
+
+#contatti-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5vw;
+}
+
+.contatti-form {
+  width: 90%;
+}
+
+footer {
+  text-align: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../Images/Italy-Pictures/SPOLETO-PANORAMICA.jpg);
+  border-top: 1px solid red;
+  background-position: 0 33%;
+  background-size: cover;
+  color: white;
+  font-size: 15px;
+  padding: 5% 0px;
+}
+
 .foot-icons {
   width: 30px;
   background-color: blue;
@@ -390,27 +414,7 @@ a {
   text-decoration: none;
 }
 
-.emoji {
-  width: 40px;
-}
 
-fieldset div {
-  width: 100%;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  padding: 15px;
-}
-
-#contatti-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5vw;
-}
-
-.contatti-form {
-  width: 90%;
-}
 
 @media (prefers-reduced-motion) {
   .hidden {
