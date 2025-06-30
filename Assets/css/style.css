@@ -328,7 +328,7 @@ iframe {
   border-radius: 5px;
   justify-content: center;
   transition: all 0.5s;
-  
+  cursor: pointer;
 }
 .galleria > p {
   padding: 0.5em;
@@ -342,21 +342,21 @@ iframe {
 }
 
 .clicked-left {
-  transform: scale(2);
+  transform: scale(2.5);
   transform-origin: left center;
   z-index: 5;
   position: relative;
 }
 
 .clicked-center {
-  transform: scale(2);
+  transform: scale(2.5);
   transform-origin: center center;
   z-index: 5;
   position: relative;
 }
 
 .clicked-right {
-  transform: scale(2);
+  transform: scale(2.5);
   transform-origin: right center;
   z-index: 5;
   position: relative;
