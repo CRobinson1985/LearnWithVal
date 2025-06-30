@@ -3,7 +3,7 @@ const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const logoImg = document.getElementById('logo');
 const headBtns = document.querySelectorAll('.head-button.li');
-const images = document.querySelectorAll('.galleria')
+const images = document.querySelectorAll('.galleria');
 let menuOpen = false;
 
 const observer = new IntersectionObserver((entries) => {
@@ -12,7 +12,6 @@ const observer = new IntersectionObserver((entries) => {
       entry.target.classList.add('show');
     } else {
       // entry.target.classList.remove('show');
-      
     }
   });
 });
@@ -21,10 +20,13 @@ images.forEach((img, index) => {
   img.addEventListener('click', () => {
     if (window.innerWidth <= 850) return;
 
-    const isClicked = img.classList.contains('clicked-left') || img.classList.contains('clicked-center') || img.classList.contains('clicked-right');
+    const isClicked =
+      img.classList.contains('clicked-left') ||
+      img.classList.contains('clicked-center') ||
+      img.classList.contains('clicked-right');
 
     // Remove all clicked classes
-    images.forEach(i => {
+    images.forEach((i) => {
       i.classList.remove('clicked-left', 'clicked-center', 'clicked-right');
     });
 
@@ -42,43 +44,40 @@ const hiddenImgs = document.querySelectorAll('.hidden');
 hiddenImgs.forEach((el) => observer.observe(el));
 
 window.addEventListener('resize', () => {
-  navLinks.style.display = "none";
+  navLinks.style.display = 'none';
   logoImg.style.height = '50px';
   menuOpen = false;
 });
 
 hamburger.addEventListener('click', () => {
   if (menuOpen == false) {
-    navLinks.style.display = "block";
+    navLinks.style.display = 'block';
     logoImg.style.height = '180px';
     menuOpen = true;
   } else if (menuOpen == true) {
-    navLinks.style.display = "none";
+    navLinks.style.display = 'none';
     logoImg.style.height = '50px';
     menuOpen = false;
-    
   }
 });
 
 window.addEventListener('resize', () => {
   if (window.innerWidth <= 768) {
-    images.forEach(i => {
+    images.forEach((i) => {
       i.classList.remove('clicked-left', 'clicked-center', 'clicked-right');
     });
   }
 });
 
-window.addEventListener('DOMContentLoaded', function() {
-  this.setTimeout(function() {
+window.addEventListener('DOMContentLoaded', function () {
+  this.setTimeout(function () {
     loadingBackdrop.style.display = 'none';
-
-  }, 2000)
-
+  }, 2000);
 });
-headBtns.forEach(btn => {
+headBtns.forEach((btn) => {
   btn.addEventListener('click', () => {
     if (menuOpen) {
-      navLinks.style.display = "none";
+      navLinks.style.display = 'none';
       logoImg.style.height = '50px';
       menuOpen = false;
     }
