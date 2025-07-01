@@ -119,12 +119,11 @@ header {
 .head-button {
   background-color: hsl(354, 70%, 54%);
   color: white;
-  height: 30px;
-  width: 130px;
+  padding: 0.5em 2em;
   border-radius: 25px;
   border: 2px solid hsl(152, 69%, 31%);
   text-align: center;
-  margin: 4px;
+  margin: 0.5em;
   box-shadow: 3px 3px 5px rgb(58, 58, 58);
   transition-duration: 200ms;
 }
@@ -149,6 +148,21 @@ header {
   position: relative;
   justify-content: center;
   gap: 15px;
+}
+
+.towerlingua {
+  display: block;
+  justify-items: center;
+}
+
+.towerlingua-btn {
+  font-weight: 900;
+  font-size: 1.2em;
+  padding: 8px 52px;
+}
+
+.libro-btn {
+  display: inline-block;
 }
 
 ul {
@@ -251,7 +265,7 @@ iframe {
   transition-duration: 500ms;
 }
 
-.carousel-item img {
+.carousel-item > img {
   transform: scale(1.2);
   opacity: 0.5;
 }
@@ -297,11 +311,6 @@ iframe {
   width: 60vw;
 }
 
-#libro {
-  float: left;
-  border: 1px solid green;
-}
-
 .center-me {
   justify-self: center;
 }
@@ -325,7 +334,13 @@ iframe {
   z-index: 100;
 }
 
+#libro {
+  float: left;
+  border: 1px solid green;
+}
+
 #libro-div {
+  
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../Images/Italy-Pictures/1PolignanoItalyshutterstock_1356233981.avif);
