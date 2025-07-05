@@ -46,14 +46,15 @@ main {
 @keyframes hop {
   0% {
     transform: translateY(0px) scale(1);
-  } 20% {
-    transform: translateY(-20px)rotate(0deg) scale(1.2);
-    
-  } 80% {
+  }
+  20% {
+    transform: translateY(-20px) rotate(0deg) scale(1.2);
+  }
+  80% {
     transform: translateY(-20px) rotate(360deg) scale(1.2);
-  } 100% {
+  }
+  100% {
     transform: translateY(0px) rotate(360deg) scale(1);
-
   }
 }
 
@@ -77,18 +78,16 @@ h3 {
 
 .photo-wrapper {
   width: 40em;
-  height: 40em; /* or whatever height you want */
-  border: 1px solid red;
+  height: 40em;
   border-radius: 50%;
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: flex-end; /* anchor image to bottom */
+  align-items: flex-end;
   margin: 2em;
   justify-self: center;
   grid-column: 1 / 2;
   grid-row: 1;
-  
 }
 
 #val-photo {
@@ -102,7 +101,6 @@ h3 {
   filter: brightness(0.75) contrast(1.4) saturate(1.3);
 }
 
-
 h1 {
   letter-spacing: -3px;
   font-weight: 900;
@@ -111,7 +109,6 @@ h1 {
   text-shadow: 3px 3px 5px hsl(152, 69%, 31%);
   /* -webkit-text-stroke: 2px #ff3131; */
   font-size: clamp(1.8em, 4vw, 3em);
-  
 }
 
 .indent-me {
@@ -124,8 +121,8 @@ h1 {
 }
 
 .intro-txt {
-  letter-spacing: -1px; 
-  grid-column: 2 / 3; 
+  letter-spacing: -1px;
+  grid-column: 2 / 3;
   text-align: center;
   align-self: center;
 }
@@ -318,8 +315,6 @@ iframe {
   filter: brightness(0.9) contrast(1.3) saturate(1.1);
 }
 
-
-
 .carousel-inner {
   border-radius: 20px;
 }
@@ -372,13 +367,11 @@ iframe {
 }
 
 .controls {
-
   margin-top: 1rem;
   display: flex;
   gap: 2em;
   align-items: center;
   justify-content: center;
-  
 }
 
 .prenota-p {
@@ -415,7 +408,6 @@ iframe {
 }
 
 #libro-div {
-  
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../Images/Italy-Pictures/1PolignanoItalyshutterstock_1356233981.avif);
@@ -550,7 +542,6 @@ a {
   .hamburger {
     display: none;
   }
-  
 }
 
 @media (max-width: 1070px) {
@@ -570,10 +561,8 @@ a {
     display: block;
   }
   #chi-sono {
-  display: block;
-  
+    display: block;
   }
-  
 }
 
 @media (max-width: 970px) {
@@ -583,7 +572,7 @@ a {
   #contatti-grid {
     display: block;
   }
-  
+
   .prenota-p {
     width: 80vw;
   }
@@ -622,9 +611,8 @@ a {
   .prenota-p {
     width: 95vw;
   }
-  .reviews-display {    
+  .reviews-display {
     display: block;
-    
   }
   .review-text {
     width: 100%;
