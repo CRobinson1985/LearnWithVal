@@ -114,8 +114,13 @@ h1 {
   
 }
 
+.indent-me {
+  margin-top: 1rem;
+}
+
 .accent-txt {
   color: #e20d0d;
+  font-family: rock-salt;
 }
 
 .intro-txt {
@@ -516,9 +521,7 @@ footer {
 }
 
 .foot-icons {
-  width: 30px;
-  background-color: blue;
-  border-radius: 50%;
+  width: 40px;
   transition: all 200ms ease-in-out;
   margin: 0 0.5cap;
 }
