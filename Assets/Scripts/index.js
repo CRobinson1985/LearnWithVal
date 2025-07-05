@@ -10,6 +10,13 @@ const toggleBtn = document.getElementById('toggle');
 const nextBtn = document.getElementById('next');
 const prevBtn = document.getElementById('prev');
 let menuOpen = false;
+const emoji = document.querySelector('.emoji');
+
+emoji.addEventListener('click', () => {
+  emoji.classList.remove('hop'); // reset in case it's already added
+  void emoji.offsetWidth;        // force reflow to restart animation
+  emoji.classList.add('hop');    // add class to trigger animation
+});
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -106,7 +113,7 @@ function renderReviews(reviewSet) {
   reviewSet.forEach((review) => {
     const div = document.createElement('div');
     div.className = 'review-text';
-    div.textContent = review;
+    div.innerHTML = `${review}<br>--Anonymous Student`;
     displayEl.appendChild(div);
   });
 }
