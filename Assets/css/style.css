@@ -74,10 +74,7 @@ h3 {
 .hero {
   display: grid;
   justify-items: center;
-}
-
-#intro-title {
-  margin: 0 12rem;
+  margin: 1rem 4rem;
 }
 
 .photo-wrapper {
@@ -92,7 +89,7 @@ h3 {
   justify-self: center;
   grid-column: 1 / 2;
   grid-row: 1;
-  box-shadow: 0 0 300px rgba(255, 153, 0, 0.7);
+  box-shadow: 0 0 100px rgba(233, 12, 12, 0.681);
   
 }
 
@@ -127,12 +124,13 @@ h1 {
 }
 
 .accent-txt {
-  color: #e20d0d;
+  color: rgb(226, 13, 13);
   font-family: rock-salt;
 }
 
 .intro-txt {
   letter-spacing: -1px;
+  margin: 1rem;
   grid-column: 2 / 3;
   text-align: center;
   align-self: center;
@@ -180,7 +178,7 @@ h1 {
 }
 
 header {
-  background-image: linear-gradient(45deg, hsl(152, 69%, 31%), white, red);
+  background-image: linear-gradient(45deg, hsl(152, 69%, 31%), white, rgb(226, 13, 13));
   text-align: center;
   margin: 0px;
   padding: 20px;
@@ -193,7 +191,7 @@ header {
 }
 
 .head-button {
-  background-color: hsl(354, 70%, 54%);
+  background-color: rgb(226, 13, 13);
   color: white;
   padding: 0.5em 2em;
   border-radius: 25px;
