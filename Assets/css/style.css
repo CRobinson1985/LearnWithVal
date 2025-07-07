@@ -61,7 +61,6 @@ main {
 h3,
 h2 {
   font-weight: 800;
-  text-shadow: 3px 3px 5px;
   margin-top: 5%;
   margin-bottom: 5vh;
 }
@@ -524,6 +523,7 @@ footer {
 }
 .crossout {
   text-decoration: line-through !important;
+  
 }
 .sale-img {
   width: 6rem;
