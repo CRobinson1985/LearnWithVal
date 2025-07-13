@@ -326,6 +326,7 @@ iframe {
 
 .carousel-inner {
   border-radius: 20px;
+  
 }
 
 .carousel-item {
@@ -335,18 +336,16 @@ iframe {
   transform: scale(1.1);
 }
 
-.carousel-item:hover {
-  img {
-    transform: scale(1);
-    opacity: 0.3;
-    filter: blur(2px);
-  }
-  transition-duration: 500ms;
+.carousel-item:hover img {
+  transform: scale(1);
+  opacity: 0.3;
+  filter: blur(2px);
 }
-
 .carousel-item > img {
+ 
   transform: scale(1.2);
   opacity: 0.5;
+ 
 }
 
 .review-container {
@@ -414,6 +413,7 @@ iframe {
 #libro {
   float: left;
   border: 1px solid green;
+  width: 20em;
 }
 
 #libro-div {
@@ -632,5 +632,11 @@ a {
   .review-text {
     width: 100%;
     margin: 1em 0;
+  }
+}
+@media (max-width: 435px) {
+  #libro {
+    margin: auto;
+    width: 100%;
   }
 }
