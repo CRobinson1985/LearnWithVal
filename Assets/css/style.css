@@ -18,14 +18,13 @@
 }
 
 body {
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
+
   background: rgb(238, 238, 238);
   background-size: cover;
   font-family: Iansui;
   font-size: 16px;
   font-weight: 600;
+  z-index: -1;
 }
 
 main {
@@ -88,7 +87,7 @@ h3 {
   justify-self: center;
   grid-column: 1 / 2;
   grid-row: 1;
-  box-shadow: 0 0 100px rgb(32, 138, 89);
+  box-shadow: 0 0 100px rgba(255, 217, 0, 0.8);
   
 }
 
@@ -222,6 +221,16 @@ header {
   position: relative;
   justify-content: center;
   gap: 15px;
+}
+
+.form-btn {
+  border: 2px solid red;
+  background: gold;
+  padding: 0.5em 4em;
+  color: black;
+  font-weight: 800;
+  font-size: 1rem;
+  
 }
 
 .towerlingua {
@@ -544,6 +553,9 @@ footer {
 a {
   text-decoration: none;
 }
+
+
+
 
 @media (prefers-reduced-motion) {
   .hidden {
