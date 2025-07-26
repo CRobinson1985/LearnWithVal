@@ -646,6 +646,14 @@ a {
     margin: 1em 0;
   }
 }
+
+@media (max-width: 500px) {
+  .form-btn {
+    padding: 0.5rem;
+    width: 100%;
+  }
+}
+
 @media (max-width: 435px) {
   #libro {
     margin: auto;
