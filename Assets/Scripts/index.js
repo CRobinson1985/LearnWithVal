@@ -64,11 +64,11 @@ window.addEventListener('resize', () => {
 hamburger.addEventListener('click', () => {
   if (menuOpen == false) {
     navLinks.style.display = 'block';
-    logoImg.style.height = '180px';
+    logoImg.style.display = 'none';
     menuOpen = true;
   } else if (menuOpen == true) {
     navLinks.style.display = 'none';
-    logoImg.style.height = '50px';
+    logoImg.style.display = 'block';
     menuOpen = false;
   }
 });
