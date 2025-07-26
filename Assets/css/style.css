@@ -648,7 +648,7 @@ a {
 }
 
 @media (max-width: 500px) {
-  .form-btn {
+  .form-btn, .book-now-btn {
     padding: 0.5rem;
     width: 100%;
   }
