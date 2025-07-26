@@ -647,6 +647,23 @@ a {
   }
 }
 
+@media (max-width: 768px) {
+  .col:hover {
+  transform: none;
+  z-index: 100;
+}
+
+.col:hover:nth-of-type(3n) {
+  transform: none;
+  z-index: 100;
+}
+
+.col:hover:nth-of-type(3n - 2) {
+  transform: none;
+  z-index: 100;
+}
+}
+
 @media (max-width: 600px) {
   .form-btn, .book-now-btn {
     padding: 0.5rem;
