@@ -9,8 +9,8 @@ const displayEl = document.getElementById('reviews-display');
 const toggleBtn = document.getElementById('toggle');
 const nextBtn = document.getElementById('next');
 const prevBtn = document.getElementById('prev');
-let menuOpen = false;
 const emoji = document.querySelector('.emoji');
+let menuOpen = false;
 
 emoji.addEventListener('click', () => {
   emoji.classList.remove('hop'); // reset in case it's already added
@@ -27,6 +27,9 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 });
+
+const hiddenImgs = document.querySelectorAll('.hidden');
+hiddenImgs.forEach((el) => observer.observe(el));
 
 images.forEach((img, index) => {
   img.addEventListener('click', () => {
@@ -52,8 +55,7 @@ images.forEach((img, index) => {
   });
 });
 
-const hiddenImgs = document.querySelectorAll('.hidden');
-hiddenImgs.forEach((el) => observer.observe(el));
+
 
 window.addEventListener('resize', () => {
   navLinks.style.display = 'none';
