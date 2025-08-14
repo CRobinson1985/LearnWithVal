@@ -18,7 +18,7 @@
 }
 
 body {
-
+  overflow-x: hidden;
   background: rgb(238, 238, 238);
   background-size: cover;
   font-family: Iansui;
@@ -400,24 +400,33 @@ iframe {
   justify-self: center;
 }
 
-.col {
-  transition: all 200ms;
+.card-transition {
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  opacity: 0; /* start invisible */
 }
 
-.col:hover {
-  transform: scale(1.1);
-  z-index: 100;
+.card-transition:nth-of-type(3n-2).visible,
+.card-transition:nth-of-type(3n).visible,
+.card-transition:nth-of-type(3n-1).visible {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
-.col:hover:nth-of-type(3n) {
-  transform: translateX(-5%) scale(1.1);
-  z-index: 100;
+.card-transition:nth-of-type(3n-2) {
+  transform: translateX(-90%);
+  
 }
 
-.col:hover:nth-of-type(3n - 2) {
-  transform: translateX(5%) scale(1.1);
-  z-index: 100;
+.card-transition:nth-of-type(3n) {
+  transform: translateX(90%);
+  transition-delay: 300ms;
 }
+.card-transition:nth-of-type(3n-1) {
+  transform: translateY(60%);
+  
+}
+
+
 
 #libro {
   float: left;

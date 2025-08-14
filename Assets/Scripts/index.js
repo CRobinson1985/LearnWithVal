@@ -55,7 +55,22 @@ images.forEach((img, index) => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".card-transition");
 
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        obs.unobserve(entry.target); // Remove if you only want it to trigger once
+      }
+    });
+  }, {
+    threshold: 0.1 // % of element in view before triggering
+  });
+
+  cards.forEach(card => observer.observe(card));
+});
 
 window.addEventListener('resize', () => {
   navLinks.style.display = 'none';
