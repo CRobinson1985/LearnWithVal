@@ -17,13 +17,17 @@
   box-sizing: border-box;
 }
 
-body {
+html {
   overflow-x: hidden;
+
+}
+
+body {
   background: rgb(238, 238, 238);
   background-size: cover;
   font-family: Iansui;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   z-index: -1;
 }
 
@@ -95,6 +99,9 @@ h3 {
   color: rgb(32, 138, 89) !important;
 }
 
+.bold-font {
+  font-weight: 900;
+}
 
 #val-photo {
   width: 100%;
@@ -115,7 +122,7 @@ h1 {
   color: black;
   font-family: rock-salt;
   text-shadow: 3px 3px 5px hsl(152, 69%, 31%);
-  font-size: clamp(1.8em, 4vw, 3em);
+  font-size: clamp(1.8em, 3vw, 3em);
 }
 
 .indent-me {
@@ -344,17 +351,17 @@ iframe {
   text-shadow: 3px 3px 4px rgba(255, 255, 255, 0.8);
   transform: scale(1.1);
 }
+.carousel-item > img {
+  display: flex;
+  justify-self: center;
+  transform: scale(1.2);
+  opacity: 0.5;
+}
 
 .carousel-item:hover img {
   transform: scale(1);
   opacity: 0.3;
   filter: blur(2px);
-}
-.carousel-item > img {
- 
-  transform: scale(1.2);
-  opacity: 0.5;
- 
 }
 
 .review-container {
@@ -426,7 +433,12 @@ iframe {
   
 }
 
-
+.left-align {
+  text-align: left;
+  list-style-type: disc;
+  margin-left: 1em;
+  margin-right: 1em;
+}
 
 #libro {
   float: left;
