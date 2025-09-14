@@ -370,6 +370,11 @@ iframe {
   width: 100%;
 }
 
+.here-link {
+  text-decoration: underline;
+  color: blue;
+}
+
 .carousel-inner {
   border-radius: 20px;
 }
