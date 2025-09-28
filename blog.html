@@ -1,35 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/Assets/css/style.css" />
-  <script src="/Assets/Scripts/index.js" defer></script>
-  <title>Document</title>
-</head>
-<body>
-  <div class="header">
-    <h1 id="header-headline">Benvenuto(a) su LearnWithVal!</h1>
-    <div id="head-buttons-div">
-      <a href="Contatti.htm"><div id="contatti-btn" class="head-button">Contatti</div></a>
-      <a href="galleria.htm"><div id="galleria-btn" class="head-button">Galleria</div></a>
-      <a href="prenota.htm"><div id="prenota-btn" class="head-button">Prenota</div></a>
-      <a href="blog.htm"><div id="blog-btn" class="head-button">Blog</div></a>
-      <a href="libro.htm"><div id="libro-btn" class="head-button">Il Mio Libro</div></a>
-      <a href="donazione.html"><div id="Donazione-btn" class="head-button">Donazione</div></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="Assets/Images/LearnWithValShip.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/52ba402221.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="stylesheet" href="Assets/css/style.css" />
+    <script src="./Assets/Scripts/index.js" type="module" defer></script>
+    <title>Learn Italian with Val – Italian Tutor & Biologist</title>
+  </head>
+
+  <body>
+    <div id="loader-backdrop">
+      <img src="Assets/Images/Italian Penguin GIF by Pudgy Penguins.gif" />
+      <h4>Loading...</h4>
     </div>
-  </div>
-  <div class="foot">
-    <p>
-      Valentina
-      <br>
-      Roma, Italia
-    </p>
-    <img class="foot-icons" src="/Assets/Images/facebook_white_44dp.png" />
-    <img class="foot-icons" src="/Assets/Images/49813049796_0030ca3f16_z.png" />
-    <img class="foot-icons" src="/Assets/Images/verbling-web-metaimages.png" />
-    <img class="foot-icons" src="/Assets/Images/Cal-logo.png" />
-    <img class="foot-icons" src="/Assets/Images/email_white_44dp.png" />
-  </div>
-</body>
-</html>
+    <header>
+      <nav>
+        <div class="logo">
+          <img id="logo" src="Assets/Images/LearnWithValShip.png" />
+        </div>
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li>
+              <a href="#recensioni">
+                <div id="recensioni-btn" class="head-button li">Recensioni</div>
+              </a>
+            </li>
+            <li>
+              <a href="#prenota">
+                <div id="prenota-btn" class="head-button li">Prenota</div>
+              </a>
+            </li>
+            <li>
+              <a href="#libro-div">
+                <div id="libro-btn" class="head-button li">Il Mio Libro</div>
+              </a>
+            </li>
+            <li>
+              <a href="#galleria-div">
+                <div id="galleria-btn" class="head-button li">Galleria</div>
+              </a>
+            </li>
+            <li>
+              <a href="#contatti">
+                <div id="contatti-btn" class="head-button li">Contatti</div>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://wise.com/pay/me/valentinap1594"
+                ><button class="head-button">Wise</button></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.paypal.com/paypalme/learnwithvale?country.x=IT&locale.x=it_IT"
+                target="_blank"
+              >
+                <div id="paypal-btn" class="head-button li">
+                  <svg
+                    class="foot-icons"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="26"
+                    fill="currentColor"
+                    class="bi bi-paypal"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.35.35 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91q.57-.403.993-1.005a4.94 4.94 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.7 2.7 0 0 0-.76-.59l-.094-.061ZM6.543 8.82a.7.7 0 0 1 .321-.079H8.3c2.82 0 5.027-1.144 5.672-4.456l.003-.016q.326.186.548.438c.546.623.679 1.535.45 2.71-.272 1.397-.866 2.307-1.663 2.874-.802.57-1.842.815-3.043.815h-.38a.87.87 0 0 0-.863.734l-.03.164-.48 3.043-.024.13-.001.004a.35.35 0 0 1-.348.296H5.595a.106.106 0 0 1-.105-.123l.208-1.32z"
+                    /></svg
+                  >PayPal
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="head-buttons-div">
+          <a href="#recensioni">
+            <div id="recensioni-btn" class="head-button">Recensioni</div>
+          </a>
+          <a href="#prenota">
+            <div id="prenota-btn" class="head-button">Prenota</div>
+          </a>
+          <a href="#libro-div">
+            <div id="libro-btn" class="head-button">Il Mio Libro</div>
+          </a>
+          <a href="#galleria-div">
+            <div id="galleria-btn" class="head-button">Galleria</div>
+          </a>
+          <a href="#contatti">
+            <div id="contatti-btn" class="head-button">Contatti</div>
+          </a>
+          <a target="_blank" href="https://wise.com/pay/me/valentinap1594"
+            ><button class="head-button">Wise</button></a
+          >
+          <a
+            href="https://www.paypal.com/paypalme/learnwithvale?country.x=IT&locale.x=it_IT"
+            target="_blank"
+          >
+            <div id="paypal-btn" class="head-button li">
+              <svg
+                class="foot-icons"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-paypal"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.35.35 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91q.57-.403.993-1.005a4.94 4.94 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.7 2.7 0 0 0-.76-.59l-.094-.061ZM6.543 8.82a.7.7 0 0 1 .321-.079H8.3c2.82 0 5.027-1.144 5.672-4.456l.003-.016q.326.186.548.438c.546.623.679 1.535.45 2.71-.272 1.397-.866 2.307-1.663 2.874-.802.57-1.842.815-3.043.815h-.38a.87.87 0 0 0-.863.734l-.03.164-.48 3.043-.024.13-.001.004a.35.35 0 0 1-.348.296H5.595a.106.106 0 0 1-.105-.123l.208-1.32z"
+                /></svg
+              >PayPal
+            </div>
+          </a>
+        </div>
+      </nav>
+    </header>
+    </body>
+    </html>

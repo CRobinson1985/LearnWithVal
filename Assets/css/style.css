@@ -182,9 +182,9 @@ h1 {
 header {
   background-image: linear-gradient(
     45deg,
-    hsl(152, 69%, 31%),
-    white,
-    rgb(226, 13, 13)
+    #198653,
+    #ffffff,
+    #e20d0d
   );
   text-align: center;
   margin: 0px;
@@ -238,6 +238,23 @@ header {
   color: black;
   font-weight: 800;
   font-size: 1rem;
+}
+
+.review-form {
+  width: 100%;
+  justify-items: center;
+  .stars-radio {
+    align-items: center;
+  }
+}
+
+.carousel-img {
+  width: 60%;
+}
+
+.myCarousel {
+  overflow: hidden;
+  
 }
 
 
@@ -442,6 +459,10 @@ iframe {
 
 .center-me {
   justify-self: center;
+  align-self: center;
+}
+.flex {
+  display: flex;
 }
 
 .card-transition {
