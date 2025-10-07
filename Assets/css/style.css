@@ -13,20 +13,14 @@
   src: url('../Fonts/rock-salt/RockSalt-Regular.ttf');
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html {
-  overflow-x: hidden;
-}
-
 body {
+  box-sizing: border-box;
   background: rgb(238, 238, 238);
   background-size: cover;
   font-family: Iansui;
   font-size: 16px;
   font-weight: 400;
+  overflow-x: hidden;
   z-index: -1;
 }
 
